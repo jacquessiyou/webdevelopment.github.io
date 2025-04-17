@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*logo.icon color = #F15A29, family of yellow */
+/*logo.KFOKAM48 color = #0270BD, family of blue ++ */
+/*logo.KFOKAM48 color = #9E780B, family of brown ++*/
+/*logo.KFOKAM48 color = #9E780B, family of orange */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0270bd;
+}
+
+section {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  width: 40rem;
+  box-shadow: 0 0 1rem #f15a29;
+  overflow: hidden;
+}
+h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.full_input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 90%;
+  padding: 1rem 0.5rem;
+  height: 3.9rem;
+  border: 0.1rem solid #9e780b;
+  outline: 0;
+  border-radius: 0.6rem 0 0 0.6rem;
+}
+
+button {
+  width: 12%;
+  font-size: 2rem;
+  height: 3.9rem;
+  border: 0;
+  background-color: #0270bd;
+  color: #fff;
+  border-radius: 0 0.6rem 0.6rem 0;
+}
+
+.paragraphe_style {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  padding-left: 0.5rem;
+  border-radius: 0.6rem;
+  background-color: #0270bd;
+  color: #fff;
+  word-break: break-all;
+  cursor: pointer;
+  animation: anime 0.5s linear;
+}
+
+.paragraphe_style:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes anime {
+  from {
+    transform: translateY(50px);
+  }
+}
+
+.paragraphe_click {
+  background-color: #9e780b;
+  text-decoration: line-through;
+}
+
+@media screen and (width < 600px) {
+  .tim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+  }
+  .chronometer {
+    width: 100%;
+  }
+  .controls {
+    flex: 1;
+    margin-right: 5%;
+  }
+}

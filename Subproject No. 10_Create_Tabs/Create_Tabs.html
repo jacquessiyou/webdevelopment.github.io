@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Create_Tabs.css">
+  <title>
+    Create Tabs
+  </title>
+</head>
+<body>
+    <div class="tab">
+        <button onclick="openTabslet(event, `Home`)" class="tablinks">Home</button>
+        <button onclick="openTabslet(event, `Contact`)" class="tablinks">Contact</button>
+        <button onclick="openTabslet(event, `Reservation`)" class="tablinks">Reservation</button>
+        <button onclick="openTabslet(event, `Shop`)" class="tablinks">Shop</button>    
+    </div>
+    <div class="tabcontent" id="Home">
+        <h3>Home</h3>
+        <p>Welcome to the Home page</p>
+        <div class="picture">
+            <img src="img1.jpg" alt="">
+        </div>
+    </div>
+    <div class="tabcontent" id="Contact">
+        <h3>Contact</h3>
+        <p>Welcome to the Contact page</p>
+        <div class="picture">
+            <img src="img2.jpeg" alt="">
+        </div>
+    </div>
+    <div class="tabcontent" id="Reservation">
+        <h3>Reservation</h3>
+        <p>Welcome to the Reservation page</p>
+        <div class="picture">
+            <img src="img3.jpeg" alt="">
+        </div>
+    </div>
+    <div class="tabcontent" id="Shop">
+        <h3>Shop</h3>
+        <p>Welcome to the Shop page</p>
+        <div class="picture">
+            <img src="img4.jpg" alt="">
+        </div>
+    </div>
+   
+    <script src="Create_Tabs.js"></script>
+</body>
+</html>

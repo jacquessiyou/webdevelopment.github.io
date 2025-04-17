@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*logo.icon color = #F15A29, family of yellow */
+/*logo.KFOKAM48 color = #0270BD, family of blue ++ */
+/*logo.KFOKAM48 color = #9E780B, family of brown ++*/
+/*logo.KFOKAM48 color = #9E780B, family of orange */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0270BD;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40rem;
+    background-color: #fff;
+    padding: 2rem;
+    flex-direction: column;
+    box-shadow: 0 0 0.8rem #F15A29;
+}
+img{
+    width: 25rem;
+}
+h4{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+.search_bar{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+input{
+    width: 75%;
+    padding: 0.8rem;
+    outline: 0;
+    border: 0.1rem solid  #9E780B;
+}
+button{
+    cursor: pointer;
+    padding: 0.8rem;
+    background-color: #0270BD;
+    color: #fff;
+    border: 0.1rem solid  #0270BD;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: #0210BD;
+}
+#button_code_bar{
+    width: 25%;
+}
+#box{
+    border: 0.1rem solid #9E780B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#pdf_box {
+    width: 100%;
+}
+#pdf_box button{
+    width: 100%;
+}
+.error{
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0.8rem;
+    width: 100%;
+    background-color: #F15A29;
+    color: #fff;
+}

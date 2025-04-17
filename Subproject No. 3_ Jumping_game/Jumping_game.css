@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*logo.icon color = #F15A29, family of yellow */
+/*logo.KFOKAM48 color = #0270BD, family of blue ++ */
+/*logo.KFOKAM48 color = #9E780B, family of brown and orange ++*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #0270bd;
+  flex-direction: column;
+}
+section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 50px #9e780b;
+}
+.jeu {
+  width: 50rem;
+  height: 20rem;
+  border: 0.1rem solid #f15a29;
+  overflow: hidden;
+  border: 0;
+  border-bottom: 0.1rem solid #0270bd;
+}
+.perso {
+  width: 2rem;
+  height: 5rem;
+  position: relative;
+  top: 15rem;
+}
+
+.animation {
+  animation: perso-saut 1500ms infinite;
+}
+/*Animation personnage saute*/
+@keyframes perso-saut {
+  0% {
+    top: 13rem;
+  }
+  25% {
+    top: 8rem;
+  }
+  50% {
+    top: 8rem;
+  }
+  100% {
+    top: 13rem;
+  }
+}
+
+.perso img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.obstacles {
+  width: 2rem;
+  height: 2rem;
+  background-color: #333;
+  position: relative;
+  top: 13rem;
+  left: 48rem;
+  border-radius: 50%;
+  animation: anime-obstacles 2.5s infinite;
+}
+
+/*Animation obstacles*/
+@keyframes anime-obstacles {
+  0% {
+    left: 48rem;
+  }
+
+  100% {
+    left: -4rem;
+  }
+}
+
+.control {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+a, button {
+  padding: 1rem 5rem;
+  border-radius: 0.4rem;
+  border: 0;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 1.5rem;
+  text-decoration: 0;
+  color: #000;
+}
+
+@media screen and (width < 880px) {
+  section {
+    width: 90%;
+  }
+
+  .jeu {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .obstacles {
+    left: 92%;
+  }
+
+  a,button {
+    display: flex;
+    gap: 10;
+    padding: 0.5rem 2.5rem;
+    border: 0;
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+
+  /*Animation obstacles*/
+@keyframes anime-obstacles {
+    0% {
+      left: 92%;
+    }
+  
+    100% {
+      left: -4rem;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*logo.icon color = #F15A29, family of yellow */
+/*logo.KFOKAM48 color = #0270BD, family of blue ++ */
+/*logo.KFOKAM48 color = #9E780B, family of brown and orange ++*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #0270BD;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;  
+    background-color: #fff;
+    padding: 2.5rem;
+    box-shadow: 0 0 1rem #9E780B;
+    border-radius: 0.6rem;
+}
+.choix{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.choix h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    color: #F15A29;
+}
+img{
+    width: 6rem;
+    height: 6rem;
+    margin: 2rem 0;
+}
+button{
+    padding: 0.5rem 3rem;
+    margin-top: 2rem;
+    border: 0.2rem solid #0270BD;
+    background-color: #0270BD;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+button:focus{
+    background-color: #fff;
+    color: #0270BD;
+}
